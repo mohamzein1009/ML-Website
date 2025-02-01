@@ -7,5 +7,5 @@ script_name = st.selectbox("Choose a script:", ["data_cleaning.py", "model_train
 run_button = st.button("Run Script")
 
 if run_button:
-    response = requests.post("http://127.0.0.1:5000/run_template", json={"script": script_name})
+    response = requests.post("https://ml-website-1da5.onrender.com", json={"script": script_name})
     st.text(response.json())
