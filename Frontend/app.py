@@ -3,7 +3,7 @@ import requests
 
 st.title("ML Template Runner")
 
-script_name = st.selectbox("Choose a script:", ["data_cleaning.py", "model_training.py", "visualization.py"])
+script_name = st.selectbox("Choose a script:", ["Data Exploration.ipynb", "Data Modelling.ipynb", "Data Preparation.ipynb"])
 run_button = st.button("Run Script")
 
 if run_button:
